@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabBarView" customModule="ProtocolDelegateDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="leftTabBarItem" destination="dxu-HI-Vi2" id="CIs-gM-9mJ"/>
+                <outlet property="midTabBarItem" destination="0zj-8P-ayx" id="wwJ-pM-MrA"/>
+                <outlet property="rightTabBarItem" destination="Eze-GX-TTw" id="zpp-Pt-mqy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hnf-VZ-R13">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxu-HI-Vi2" customClass="CustomTabBarItem" customModule="ProtocolDelegateDemo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zj-8P-ayx" customClass="CustomTabBarItem" customModule="ProtocolDelegateDemo" customModuleProvider="target">
+                            <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="0zj-8P-ayx" secondAttribute="height" multiplier="1:1" id="o6P-lA-uda"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-GX-TTw" customClass="CustomTabBarItem" customModule="ProtocolDelegateDemo" customModuleProvider="target">
+                            <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Eze-GX-TTw" firstAttribute="leading" secondItem="0zj-8P-ayx" secondAttribute="trailing" id="1cv-hl-juU"/>
+                        <constraint firstItem="dxu-HI-Vi2" firstAttribute="width" secondItem="0zj-8P-ayx" secondAttribute="width" id="5pf-M6-Th4"/>
+                        <constraint firstItem="dxu-HI-Vi2" firstAttribute="centerY" secondItem="0zj-8P-ayx" secondAttribute="centerY" id="7MX-J2-OKv"/>
+                        <constraint firstAttribute="bottom" secondItem="Eze-GX-TTw" secondAttribute="bottom" id="95o-kL-EUZ"/>
+                        <constraint firstItem="Eze-GX-TTw" firstAttribute="centerY" secondItem="0zj-8P-ayx" secondAttribute="centerY" id="AhQ-Yd-okE"/>
+                        <constraint firstItem="Eze-GX-TTw" firstAttribute="width" secondItem="0zj-8P-ayx" secondAttribute="width" id="Gtx-LB-vjt"/>
+                        <constraint firstAttribute="bottom" secondItem="0zj-8P-ayx" secondAttribute="bottom" id="K4k-BK-jFA"/>
+                        <constraint firstItem="0zj-8P-ayx" firstAttribute="top" secondItem="hnf-VZ-R13" secondAttribute="top" id="LQ2-Ld-5yA"/>
+                        <constraint firstItem="dxu-HI-Vi2" firstAttribute="leading" secondItem="hnf-VZ-R13" secondAttribute="leading" id="daO-rC-gDh"/>
+                        <constraint firstItem="dxu-HI-Vi2" firstAttribute="height" secondItem="0zj-8P-ayx" secondAttribute="height" id="fel-Uh-1ib"/>
+                        <constraint firstAttribute="trailing" secondItem="Eze-GX-TTw" secondAttribute="trailing" id="fzx-gh-6b7"/>
+                        <constraint firstItem="0zj-8P-ayx" firstAttribute="leading" secondItem="dxu-HI-Vi2" secondAttribute="trailing" id="mLM-L6-ZIx"/>
+                        <constraint firstItem="Eze-GX-TTw" firstAttribute="top" secondItem="hnf-VZ-R13" secondAttribute="top" id="mUv-TK-MMH"/>
+                        <constraint firstItem="dxu-HI-Vi2" firstAttribute="top" secondItem="hnf-VZ-R13" secondAttribute="top" id="sqg-zJ-Jrs"/>
+                        <constraint firstItem="Eze-GX-TTw" firstAttribute="height" secondItem="0zj-8P-ayx" secondAttribute="height" id="wuO-wL-0Ms"/>
+                        <constraint firstAttribute="bottom" secondItem="dxu-HI-Vi2" secondAttribute="bottom" id="zzn-24-ygl"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hnf-VZ-R13" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Uz-wz-jev"/>
+                <constraint firstItem="hnf-VZ-R13" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3EQ-Pi-lax"/>
+                <constraint firstItem="0zj-8P-ayx" firstAttribute="centerY" secondItem="hnf-VZ-R13" secondAttribute="centerY" id="Beh-gu-gIX"/>
+                <constraint firstItem="0zj-8P-ayx" firstAttribute="centerX" secondItem="hnf-VZ-R13" secondAttribute="centerX" id="HPM-Qk-eMe"/>
+                <constraint firstAttribute="bottom" secondItem="hnf-VZ-R13" secondAttribute="bottom" id="YGV-HL-6J5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hnf-VZ-R13" secondAttribute="trailing" id="iNz-Tc-Pys"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
