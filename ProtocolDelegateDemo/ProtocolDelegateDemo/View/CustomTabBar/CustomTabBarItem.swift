@@ -1,8 +1,8 @@
 //
-//  CustomFooterButton.swift
+//  CustomTabBarItem.swift
 //  ProtocolDelegateDemo
 //
-//  Created by Leo Ho on 2022/4/10.
+//  Created by Leo Ho on 2022/4/11.
 //
 
 import UIKit
@@ -10,16 +10,15 @@ import UIKit
 class CustomTabBarItem: UIView {
     
     @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var itemIconImageView: UIImageView!
-    @IBOutlet weak var buttonTitleLabel: UILabel!
-    @IBOutlet weak var backgroundButton: UIButton!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     var delegate: CustomTabBarItemDelegate?
-    
-    var buttonTags: Int = 0
-    
+        
     override func awakeFromNib() {
         addXibView()
+        button.setTitle("", for: .normal)
     }
     
     // view 在設計時想要看到畫面要用這個
@@ -28,37 +27,41 @@ class CustomTabBarItem: UIView {
         addXibView()
     }
     
-    func setInit(viewBackgroundColor: UIColor,
-                 itemIconImage: UIImage?, itemIconImageTintColor: UIColor, imageContentMode: UIImageView.ContentMode,
-                 buttonText: String?, buttonTextTintColor: UIColor, buttonTextFontStyle: SystemFontStyle, buttonTextFontSize: CGFloat,
+    func setInit(iconImage: UIImage?,
+                 iconImageTintColor: UIColor,
+                 iconImageContentMode: UIImageView.ContentMode,
+                 labelText: String?,
+                 labelTextTintColor: UIColor,
+                 labelTextFontStyle: SystemFontStyle,
+                 labelTextFontSize: CGFloat,
+                 viewBackgroundColor: UIColor,
                  buttonTag: Int,
                  delegate: CustomTabBarItemDelegate) {
-        setBackgroundView(bgColor: viewBackgroundColor)
-        setItemIconImageView(icon: itemIconImage, tintColor: itemIconImageTintColor, imageContentMode: imageContentMode)
-        setButtonTitleLabel(buttonTitle: buttonText, buttonTextTintColor: buttonTextTintColor, fontStyle: buttonTextFontStyle, fontSize: buttonTextFontSize)
-        setBackgroundButton(btnTag: buttonTag)
-        self.buttonTags = buttonTag
+        setImageView(icon: iconImage, tintColor: iconImageTintColor, imageContentMode: iconImageContentMode)
+        setLabel(title: labelText, textTintColor: labelTextTintColor, fontStyle: labelTextFontStyle, fontSize: labelTextFontSize)
+        setBackgroundView(backgroundColor: viewBackgroundColor)
+        setButton(tag: buttonTag)
         self.delegate = delegate
     }
     
-    private func setBackgroundView(bgColor: UIColor) {
-        backgroundView.backgroundColor = bgColor
+    private func setImageView(icon: UIImage?, tintColor: UIColor, imageContentMode: UIImageView.ContentMode = .scaleAspectFit) {
+        imageView.image = icon
+        imageView.tintColor = tintColor
+        imageView.contentMode = imageContentMode
     }
     
-    private func setItemIconImageView(icon: UIImage?, tintColor: UIColor, imageContentMode: UIImageView.ContentMode = .scaleAspectFit) {
-        itemIconImageView.image = icon
-        itemIconImageView.tintColor = tintColor
-        itemIconImageView.contentMode = imageContentMode
+    private func setLabel(title: String?, textTintColor: UIColor, fontStyle: SystemFontStyle, fontSize: CGFloat) {
+        label.text = title
+        label.textColor = textTintColor
+        label.font = chooseSystemFontStyle(systemFontStyle: fontStyle, fontSize: fontSize)
     }
     
-    private func setButtonTitleLabel(buttonTitle: String?, buttonTextTintColor: UIColor, fontStyle: SystemFontStyle, fontSize: CGFloat) {
-        buttonTitleLabel.text = buttonTitle
-        buttonTitleLabel.textColor = buttonTextTintColor
-        buttonTitleLabel.font = chooseSystemFontStyle(systemFontStyle: fontStyle, fontSize: fontSize)
+    private func setBackgroundView(backgroundColor: UIColor) {
+        backgroundView.backgroundColor = backgroundColor
     }
     
-    private func setBackgroundButton(btnTag: Int) {
-        backgroundButton.tag = btnTag
+    private func setButton(tag: Int) {
+        button.tag = tag
     }
     
     enum SystemFontStyle {
@@ -91,7 +94,6 @@ fileprivate extension CustomTabBarItem {
         }
     }
 }
-
 
 protocol CustomTabBarItemDelegate {
     func target(index: Int)

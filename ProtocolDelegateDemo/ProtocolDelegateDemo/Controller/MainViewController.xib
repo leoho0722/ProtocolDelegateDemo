@@ -36,7 +36,7 @@
                 <constraint firstItem="11A-aV-kid" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Nye-Wj-m1O"/>
                 <constraint firstItem="11A-aV-kid" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="knt-e0-VvG"/>
             </constraints>
-            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-336.16071428571428"/>
         </view>
     </objects>
     <resources>

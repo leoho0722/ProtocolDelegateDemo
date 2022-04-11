@@ -1,17 +1,17 @@
 //
-//  CustomTabBarView.swift
+//  CustomTabBarView2.swift
 //  ProtocolDelegateDemo
 //
-//  Created by Leo Ho on 2022/4/10.
+//  Created by Leo Ho on 2022/4/11.
 //
 
 import UIKit
 
 class CustomTabBarView: UIView {
     
-    @IBOutlet weak var leftTabBarItem: CustomTabBarItem!
-    @IBOutlet weak var midTabBarItem: CustomTabBarItem!
-    @IBOutlet weak var rightTabBarItem: CustomTabBarItem!
+    @IBOutlet weak var left: CustomTabBarItem!
+    @IBOutlet weak var mid: CustomTabBarItem!
+    @IBOutlet weak var right: CustomTabBarItem!
     
     override func awakeFromNib() {
         addXibView()
@@ -30,43 +30,44 @@ class CustomTabBarView: UIView {
     }
     
     func setInitLeftTabBarItem() {
-        leftTabBarItem.setInit(viewBackgroundColor: .clear,
-                               itemIconImage: UIImage(systemName: "applelogo"),
-                               itemIconImageTintColor: .red,
-                               imageContentMode: .scaleAspectFit,
-                               buttonText: "Apple Logo",
-                               buttonTextTintColor: .red,
-                               buttonTextFontStyle: .normal,
-                               buttonTextFontSize: 20,
-                               buttonTag: 0,
-                               delegate: self)
+        left.setInit(iconImage: UIImage(systemName: "applelogo"),
+                     iconImageTintColor: .red,
+                     iconImageContentMode: .scaleAspectFit,
+                     labelText: "Apple Logo",
+                     labelTextTintColor: .red,
+                     labelTextFontStyle: .normal,
+                     labelTextFontSize: 20,
+                     viewBackgroundColor: .white,
+                     buttonTag: 0,
+                     delegate: self)
     }
     
     func setInitMidTabBarItem() {
-        midTabBarItem.setInit(viewBackgroundColor: .clear,
-                              itemIconImage: UIImage(systemName: "macpro.gen3.fill"),
-                              itemIconImageTintColor: .green,
-                              imageContentMode: .scaleAspectFit,
-                              buttonText: "Mac Pro 2019",
-                              buttonTextTintColor: .green,
-                              buttonTextFontStyle: .bold,
-                              buttonTextFontSize: 20,
-                              buttonTag: 1,
-                              delegate: self)
+        mid.setInit(iconImage: UIImage(systemName: "macpro.gen3.fill"),
+                    iconImageTintColor: .green,
+                    iconImageContentMode: .scaleAspectFit,
+                    labelText: "Mac Pro 2019",
+                    labelTextTintColor: .green,
+                    labelTextFontStyle: .bold,
+                    labelTextFontSize: 20,
+                    viewBackgroundColor: .white,
+                    buttonTag: 1,
+                    delegate: self)
     }
     
     func setInitRightTabBarItem() {
-        rightTabBarItem.setInit(viewBackgroundColor: .clear,
-                                itemIconImage: UIImage(systemName: "airpodspro"),
-                                itemIconImageTintColor: .blue,
-                                imageContentMode: .scaleAspectFit,
-                                buttonText: "AirPods Pro",
-                                buttonTextTintColor: .blue,
-                                buttonTextFontStyle: .italic,
-                                buttonTextFontSize: 20,
-                                buttonTag: 2,
-                                delegate: self)
+        right.setInit(iconImage: UIImage(systemName: "airpodspro"),
+                      iconImageTintColor: .blue,
+                      iconImageContentMode: .scaleAspectFit,
+                      labelText: "AirPods Pro",
+                      labelTextTintColor: .blue,
+                      labelTextFontStyle: .italic,
+                      labelTextFontSize: 20,
+                      viewBackgroundColor: .white,
+                      buttonTag: 2,
+                      delegate: self)
     }
+    
 }
 
 fileprivate extension CustomTabBarView {

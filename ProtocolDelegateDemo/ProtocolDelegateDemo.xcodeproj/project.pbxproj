@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00FDC6E2803BAF500B7EEA5 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FDC6C2803BAF500B7EEA5 /* CustomTabBarItem.swift */; };
+		D00FDC6F2803BAF500B7EEA5 /* CustomTabBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00FDC6D2803BAF500B7EEA5 /* CustomTabBarItem.xib */; };
+		D00FDC722803C0F900B7EEA5 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FDC702803C0F900B7EEA5 /* CustomTabBarView.swift */; };
+		D00FDC732803C0F900B7EEA5 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00FDC712803C0F900B7EEA5 /* CustomTabBarView.xib */; };
 		D0BD5EA82802E85900ED5151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD5EA72802E85900ED5151 /* AppDelegate.swift */; };
 		D0BD5EAA2802E85900ED5151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD5EA92802E85900ED5151 /* SceneDelegate.swift */; };
 		D0BD5EB12802E85B00ED5151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BD5EB02802E85B00ED5151 /* Assets.xcassets */; };
 		D0BD5EB42802E85B00ED5151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BD5EB22802E85B00ED5151 /* LaunchScreen.storyboard */; };
 		D0BD5EBE2802EA2900ED5151 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD5EBC2802EA2900ED5151 /* MainViewController.swift */; };
 		D0BD5EBF2802EA2900ED5151 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BD5EBD2802EA2900ED5151 /* MainViewController.xib */; };
-		D0BD5EC32802ECBC00ED5151 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD5EC12802ECBC00ED5151 /* CustomTabBarItem.swift */; };
-		D0BD5EC42802ECBC00ED5151 /* CustomTabBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BD5EC22802ECBC00ED5151 /* CustomTabBarItem.xib */; };
 		D0BD5EC72802F4BD00ED5151 /* NextPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD5EC52802F4BD00ED5151 /* NextPageViewController.swift */; };
 		D0BD5EC82802F4BD00ED5151 /* NextPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BD5EC62802F4BD00ED5151 /* NextPageViewController.xib */; };
-		D0BD5ECB2803235300ED5151 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD5EC92803235300ED5151 /* CustomTabBarView.swift */; };
-		D0BD5ECC2803235300ED5151 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BD5ECA2803235300ED5151 /* CustomTabBarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D00FDC6C2803BAF500B7EEA5 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		D00FDC6D2803BAF500B7EEA5 /* CustomTabBarItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarItem.xib; sourceTree = "<group>"; };
+		D00FDC702803C0F900B7EEA5 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		D00FDC712803C0F900B7EEA5 /* CustomTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
 		D0BD5EA42802E85900ED5151 /* ProtocolDelegateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolDelegateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BD5EA72802E85900ED5151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0BD5EA92802E85900ED5151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,12 +34,8 @@
 		D0BD5EB52802E85B00ED5151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BD5EBC2802EA2900ED5151 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D0BD5EBD2802EA2900ED5151 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		D0BD5EC12802ECBC00ED5151 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
-		D0BD5EC22802ECBC00ED5151 /* CustomTabBarItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarItem.xib; sourceTree = "<group>"; };
 		D0BD5EC52802F4BD00ED5151 /* NextPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPageViewController.swift; sourceTree = "<group>"; };
 		D0BD5EC62802F4BD00ED5151 /* NextPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextPageViewController.xib; sourceTree = "<group>"; };
-		D0BD5EC92803235300ED5151 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
-		D0BD5ECA2803235300ED5151 /* CustomTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,10 @@
 		D0BD5ECD28032CEC00ED5151 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				D0BD5EC12802ECBC00ED5151 /* CustomTabBarItem.swift */,
-				D0BD5EC22802ECBC00ED5151 /* CustomTabBarItem.xib */,
-				D0BD5EC92803235300ED5151 /* CustomTabBarView.swift */,
-				D0BD5ECA2803235300ED5151 /* CustomTabBarView.xib */,
+				D00FDC6C2803BAF500B7EEA5 /* CustomTabBarItem.swift */,
+				D00FDC6D2803BAF500B7EEA5 /* CustomTabBarItem.xib */,
+				D00FDC702803C0F900B7EEA5 /* CustomTabBarView.swift */,
+				D00FDC712803C0F900B7EEA5 /* CustomTabBarView.xib */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -168,11 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BD5EB42802E85B00ED5151 /* LaunchScreen.storyboard in Resources */,
-				D0BD5EC42802ECBC00ED5151 /* CustomTabBarItem.xib in Resources */,
+				D00FDC732803C0F900B7EEA5 /* CustomTabBarView.xib in Resources */,
 				D0BD5EBF2802EA2900ED5151 /* MainViewController.xib in Resources */,
 				D0BD5EB12802E85B00ED5151 /* Assets.xcassets in Resources */,
+				D00FDC6F2803BAF500B7EEA5 /* CustomTabBarItem.xib in Resources */,
 				D0BD5EC82802F4BD00ED5151 /* NextPageViewController.xib in Resources */,
-				D0BD5ECC2803235300ED5151 /* CustomTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,10 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BD5EBE2802EA2900ED5151 /* MainViewController.swift in Sources */,
-				D0BD5EC32802ECBC00ED5151 /* CustomTabBarItem.swift in Sources */,
 				D0BD5EA82802E85900ED5151 /* AppDelegate.swift in Sources */,
-				D0BD5ECB2803235300ED5151 /* CustomTabBarView.swift in Sources */,
+				D00FDC6E2803BAF500B7EEA5 /* CustomTabBarItem.swift in Sources */,
 				D0BD5EAA2802E85900ED5151 /* SceneDelegate.swift in Sources */,
+				D00FDC722803C0F900B7EEA5 /* CustomTabBarView.swift in Sources */,
 				D0BD5EC72802F4BD00ED5151 /* NextPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
